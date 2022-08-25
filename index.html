@@ -8,6 +8,8 @@
   <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
-  <main></main>
+  <main>fetch("https://anapioficeandfire.com/api/books")
+    .then((resp) => resp.json())
+    .then((json) => console.log(json));</main>
 </body>
 </html>
